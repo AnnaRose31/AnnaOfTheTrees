@@ -25,7 +25,7 @@ body {
 .navbar a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
   color: rgb(255, 255, 255);
   padding: 0.9vw 4vw;
   text-decoration: none;
@@ -34,7 +34,14 @@ body {
 .navbar a:hover {
   font-weight: bold;
   color: rgb(73, 57, 0);
-  font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
+  text-decoration: underline;
+}
+
+#projects {
+  font-weight: bold;
+  color: rgb(92, 72, 0);
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
   text-decoration: underline;
 }
 
@@ -68,7 +75,7 @@ h2 {
 
 #container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   grid-gap: 2em;
   align-items: center;
   padding-left: 10%;
@@ -78,17 +85,19 @@ h2 {
 
 .item {
   text-align: center;
-  padding: 1em
+  padding: 1em;
   display: grid;
   place-items: center;
-  background-color: rgb(255,255, 255);
+  background-color: rgb(255, 255, 255);
   border: 0.1em solid rgb(158, 124, 0);
   border-radius: 1em;
   overflow: hidden;
 }
 
-.convo, #item2, #item3 {
-  padding: 3%;
+.convo,
+#item2,
+#item3 {
+  padding: 2%;
   color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
   font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1600 - 360)));
@@ -102,8 +111,14 @@ img {
   height: auto;
 }
 
-#item1, #item4, #item5, #item6, #item7 {
+#item1,
+#item4,
+#item5,
+#item6,
+#item7 {
   padding: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .title {
@@ -115,7 +130,7 @@ img {
 button {
   border: 0.1em solid rgb(158, 124, 0);
   background-color: rgb(255, 252, 235);
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 button:hover {

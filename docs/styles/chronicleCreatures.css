@@ -25,7 +25,7 @@ body {
 .navbar a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
   color: rgb(255, 255, 255);
   padding: 0.9vw 4vw;
   text-decoration: none;
@@ -34,7 +34,14 @@ body {
 .navbar a:hover {
   font-weight: bold;
   color: rgb(73, 57, 0);
-  font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
+  text-decoration: underline;
+}
+
+#projects {
+  font-weight: bold;
+  color: rgb(92, 72, 0);
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
   text-decoration: underline;
 }
 
@@ -68,7 +75,7 @@ h2 {
 
 #container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   grid-gap: 2em;
   align-items: center;
   padding-left: 10%;
@@ -87,8 +94,16 @@ h2 {
   overflow: hidden;
 }
 
+#item1,
+#item3,
+#item5,
+#item6 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .convo {
-  padding: 3%;
+  padding: 1%;
   color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
   font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1600 - 360)));

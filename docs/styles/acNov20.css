@@ -25,7 +25,7 @@ body {
 .navbar a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
   color: rgb(255, 255, 255);
   padding: 0.9vw 4vw;
   text-decoration: none;
@@ -33,8 +33,15 @@ body {
 
 .navbar a:hover {
   font-weight: bold;
-  color:  rgb(73, 57, 0);
-  font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360)));
+  color: rgb(73, 57, 0);
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
+  text-decoration: underline;
+}
+
+#blog {
+  font-weight: bold;
+  color: rgb(92, 72, 0);
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
   text-decoration: underline;
 }
 
@@ -47,7 +54,7 @@ body {
 }
 
 h1 {
-  color:   rgb(107, 9, 175);
+  color: rgb(107, 9, 175);
   font-family: Arial, Helvetica, sans-serif;
   font-size: calc(25px + (28 - 25) * ((100vw - 360px) / (1600 - 360)));
 }
@@ -75,12 +82,11 @@ img {
 }
 
 .item {
-  padding: 2em
   display: grid;
-  place-items: center;
-  background-color: rgb(255,255, 255);
-  border: 0.1em solid  rgb(237, 111, 9);
-  border-radius: .5em;
+  /* place-items: center; */
+  background-color: rgb(255, 255, 255);
+  border: 0.1em solid rgb(237, 111, 9);
+  border-radius: 0.5em;
   overflow: hidden;
 }
 
@@ -93,12 +99,12 @@ img {
   line-height: 150%;
 }
 
-
-#item2, #item4 {
-border: none;
-overflow:hidden;
-padding-left: 10%;
-padding-right: 10%;
+#item2,
+#item4 {
+  border: none;
+  overflow: hidden;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 footer {
@@ -110,6 +116,6 @@ footer {
 
 #word {
   text-align: center;
-  color:  rgb(73, 57, 0);
+  color: rgb(73, 57, 0);
   font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360)));
 }

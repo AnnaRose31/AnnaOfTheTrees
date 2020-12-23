@@ -29,7 +29,7 @@ body {
 .navbar a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360)));
+  font-size: calc(16px + (18 - 15) * ((100vw - 360px) / (1600 - 360)));
   color: rgb(255, 255, 255);
   padding: 0.9vw 4vw;
   text-decoration: none;
@@ -37,43 +37,54 @@ body {
 
 .navbar a:hover {
   font-weight: bold;
-  color:  rgb(73, 57, 0);
-  font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360)));
+  color: rgb(73, 57, 0);
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
+  text-decoration: underline;
+}
+
+#projects {
+  font-weight: bold;
+  color: rgb(92, 72, 0);
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
   text-decoration: underline;
 }
 
 #container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  grid-gap: 4em;
   align-items: center;
   padding-top: 7em;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .item {
   text-align: center;
-  padding: 2em
-  display: grid;
+  padding: 2em;
+  /* display: grid; */
   place-items: center;
-  background-color: rgb(255,255, 255);
+  background-color: rgb(255, 255, 255);
   border: 0.2em solid rgb(158, 124, 0);
   box-shadow: 5px 8px 10px rgb(92, 72, 0);
   border-radius: 1em;
   overflow: hidden;
+  margin-bottom: 2em;
 }
 
 .title {
   color: rgb(92, 72, 0);
   font-family: Arial, Helvetica, sans-serif;
   font-size: calc(20px + (25 - 20) * ((100vw - 360px) / (1600 - 360)));
+  padding: 1%;
 }
 
 button {
   border: 0.1em solid rgb(158, 124, 0);
   background-color: rgb(255, 252, 235);
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 button:hover {
@@ -102,6 +113,6 @@ footer {
 
 #word {
   text-align: center;
-  color:  rgb(73, 57, 0);
+  color: rgb(73, 57, 0);
   font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360)));
 }
