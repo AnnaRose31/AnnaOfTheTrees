@@ -1,0 +1,210 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/mountainBG2.svg');
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: cover;
+  background-color: lightblue;
+}
+
+#logo {
+  position: fixed;
+  top: 30%;
+  left: 0%;
+  height: 70%;
+  width: 100%;
+  z-index: 2;
+}
+
+#ground {
+  position: fixed;
+  top: 95%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(46, 138, 90);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
+  color: #f2f2f2;
+  padding: 0.9vw 4vw;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  color: rgb(92, 72, 0);
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
+  text-decoration: underline;
+}
+
+#home {
+  font-weight: bold;
+  color: rgb(92, 72, 0);
+  font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1600 - 360)));
+  text-decoration: underline;
+}
+
+#name {
+  position: fixed;
+  top: 25%;
+  left: 2%;
+  height: 95%;
+  width: 95%;
+  z-index: 2;
+}
+
+.TopLeft {
+  animation: colorLeaves1 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes colorLeaves1 {
+  0% {
+    fill: rgb(115, 130, 89);
+  }
+  10% {
+    fill: rgb(173, 184, 92);
+  }
+  20% {
+    fill: rgb(207, 209, 88);
+  }
+  30% {
+    fill: rgb(219, 222, 60);
+  }
+  40% {
+    fill: rgb(222, 203, 60);
+  }
+  50% {
+    fill: rgb(207, 165, 52);
+  }
+  60% {
+    fill: rgb(207, 145, 52);
+  }
+  70% {
+    fill: rgb(207, 127, 52);
+  }
+  80% {
+    fill: rgb(207, 127, 52);
+  }
+  90% {
+    fill: rgb(207, 96, 52);
+  }
+  100% {
+    fill: rgb(207, 96, 52);
+  }
+}
+
+.Middle {
+  animation: colorLeaves2 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes colorLeaves2 {
+  0% {
+    fill: rgb(115, 130, 89);
+  }
+  10% {
+    fill: rgb(115, 130, 89);
+  }
+  20% {
+    fill: rgb(173, 184, 92);
+  }
+  30% {
+    fill: rgb(207, 209, 88);
+  }
+  40% {
+    fill: rgb(219, 222, 60);
+  }
+  50% {
+    fill: rgb(222, 203, 60);
+  }
+  60% {
+    fill: rgb(207, 165, 52);
+  }
+  70% {
+    fill: rgb(207, 145, 52);
+  }
+  80% {
+    fill: rgb(207, 127, 52);
+  }
+  90% {
+    fill: rgb(207, 127, 52);
+  }
+  100% {
+    fill: rgb(207, 96, 52);
+  }
+}
+
+.BottomRight {
+  animation: colorLeaves3 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes colorLeaves3 {
+  0% {
+    fill: rgb(115, 130, 89);
+  }
+  10% {
+    fill: rgb(115, 130, 89);
+  }
+  20% {
+    fill: rgb(115, 130, 89);
+  }
+  30% {
+    fill: rgb(173, 184, 92);
+  }
+  40% {
+    fill: rgb(207, 209, 88);
+  }
+  50% {
+    fill: rgb(219, 222, 60);
+  }
+  60% {
+    fill: rgb(222, 203, 60);
+  }
+  70% {
+    fill: rgb(207, 165, 52);
+  }
+  80% {
+    fill: rgb(207, 145, 52);
+  }
+  90% {
+    fill: rgb(207, 127, 52);
+  }
+  100% {
+    fill: rgb(207, 96, 52);
+  }
+}
+
+.TopLeft,
+.Middle,
+.BottomRight {
+  fill: rgb(46, 138, 90);
+}
+
+#name {
+  fill: rgb(204, 151, 255);
+}
